@@ -1,1 +1,77 @@
-# prog
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteoCentral</title>
+    <style>
+        * {box-sizing: border-box;}
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #EAF2FB;
+            color: #333;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            text-align: center;
+        }
+        
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .info-block {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(50% - 10px); /* Оставляем пространство между блоками */
+            padding: 10px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #EFF7FE;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .info-block {
+                width: 100%; /* На маленьких экранах блоки идут друг под другом */
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:#3B7A57;">MeteoCentral</h1>
+        <input type="search" placeholder="Введите город..." />
+        <br/>
+        <div class="info-block">
+            <h2>Температура воздуха</h2>
+            <p>Сейчас: 22°C</p>
+            <p>Сегодня днем: 25°C</p>
+        </div>
+        <div class="info-block">
+            <h2>Осадки</h2>
+            <p>Вероятность дождя: 20%</p>
+            <p>Облачность: ясно</p>
+        </div>
+    </div>
+   <img src="картинка.png">
+</body>
+</html>
