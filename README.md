@@ -72,6 +72,6 @@
             <p>Облачность: ясно</p>
         </div>
     </div>
-   <img src="kjk.png">
+   <img src="pog.png">
 </body>
 </html>
